@@ -12,33 +12,42 @@
 		android:layout_height="wrap_content"
 		android:text="Button"
 
-		/>
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.0"
+		tools:layout_editor_absoluteX="4dp" />
 
 	<Button
 		android:id="@+id/button4"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_marginStart="4dp"
+		android:layout_marginBottom="12dp"
 		android:text="Button"
-		tools:layout_editor_absoluteX="-37dp"
-		tools:layout_editor_absoluteY="678dp" />
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
 
 	<Button
 		android:id="@+id/button5"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="16dp"
+		android:layout_marginTop="60dp"
 		android:text="Button"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.029"
 		app:layout_constraintStart_toStartOf="parent"
-		tools:layout_editor_absoluteY="48dp" />
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<Button
 		android:id="@+id/button6"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_marginStart="320dp"
+		android:layout_marginStart="304dp"
+		android:layout_marginTop="612dp"
 		android:text="Button"
 		app:layout_constraintStart_toStartOf="parent"
-		tools:layout_editor_absoluteY="623dp" />
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<androidx.constraintlayout.widget.Guideline
 		android:id="@+id/guideline"
@@ -53,21 +62,25 @@
 		android:id="@+id/textView"
 		android:layout_width="207dp"
 		android:layout_height="362dp"
+		android:layout_marginEnd="200dp"
 		android:background="#E40505"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHeight_default="percent"
-		app:layout_constraintWidth_default="percent"
-		tools:layout_editor_absoluteY="364dp" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.956"
+		app:layout_constraintWidth_default="percent" />
 
 	<TextView
 		android:id="@+id/textView2"
 		android:layout_width="203dp"
 		android:layout_height="362dp"
+		android:layout_marginEnd="200dp"
 		android:background="#00BCD4"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintHeight_default="percent"
-		app:layout_constraintWidth_default="percent"
-		tools:layout_editor_absoluteY="0dp" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintWidth_default="percent" />
 
 	<androidx.constraintlayout.widget.Guideline
 		android:id="@+id/guideline2"
@@ -80,10 +93,10 @@
 		android:id="@+id/textView3"
 		android:layout_width="203dp"
 		android:layout_height="362dp"
-		android:layout_marginStart="4dp"
+		android:layout_marginStart="204dp"
 		android:background="#FFEB3B"
 		app:layout_constraintStart_toStartOf="parent"
-		tools:layout_editor_absoluteY="0dp" />
+		app:layout_constraintTop_toTopOf="parent" />
 
 	<TextView
 		android:id="@+id/textView4"
@@ -91,7 +104,7 @@
 		android:layout_height="360dp"
 		android:background="#000000"
 		app:layout_constraintStart_toStartOf="parent"
-		tools:layout_editor_absoluteY="366dp" />
+		app:layout_constraintTop_toTopOf="@+id/textView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
